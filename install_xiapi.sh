@@ -49,9 +49,9 @@ check
 
 
 
-echo "installing libusb (ximea version)"
-cp -d libs/libusb/vanillaX$platform_bits/lib* $PREFIX/lib/
-check
+#echo "installing libusb (ximea version)"
+#cp -d libs/libusb/vanillaX$platform_bits/lib* $PREFIX/lib/
+#check
 
 if [ "${KV:0:$(($(expr index $KV .)-1))}" -eq 3 ] && ( \
         [ "${KV:$(expr index $KV .):$(($(expr index ${KV:$(expr index $KV .)} .)-1))}" -eq 12 ] || \
